@@ -1,0 +1,61 @@
+.theme-changer {
+  display: none;
+}
+
+
+.theme-changer{
+  background:#fff;
+  border-radius:0 0 5px;
+  margin-top:-150px;
+  min-height:200px;
+  padding:10px 10px 20px 10px;
+  position:fixed;
+  text-align:left;
+  top:50%;
+  width:216px;
+  z-index: 99999;
+  left:-217px;
+  transition:all .2s;
+  border: 1px solid #ccc;
+}
+
+.theme-changer.open{
+  left:0
+}
+
+.theme-changer .btn-changer{
+  background:#fff;
+  color: #443;
+  display:block;
+  font-size:24px;
+  height:40px;
+  width: 40px;
+  left:100%;
+  position:absolute;
+  text-align:center;
+  top:-1px;
+  cursor: pointer;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px dashed #ccc;
+}
+
+.theme-changer .btn-changer i {
+  vertical-align:middle;
+  line-height: 1.5;
+}
+
+.theme-changer ul.color-changer li {
+  display: inline-block;
+}
+
+.theme-changer ul.color-changer a{
+  background:#111;
+  border:none;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 3px;
+  text-decoration:none;  
+}

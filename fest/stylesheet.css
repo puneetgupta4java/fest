@@ -1,0 +1,19 @@
+.contacts{
+    text-align: center;
+}
+.img{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    margin-left: 38%;
+}
+#clgweb{
+    color: deepskyblue;
+    transition: color 300ms ease-in-out;
+    font-size: 30px;
+}
+#clgweb:hover{
+    color:#161415;
+    opacity: 1;
+}

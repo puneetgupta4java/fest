@@ -1,0 +1,114 @@
+/* ==============================
+   MAIN COLOR
+   ----- red-2 #FF4C05 ----------
+   
+   ALL COLORS
+   green - #00c8aa
+   blue - #00b2ca
+   dark - #171724
+   red-1 - #ff0030
+   red-2 - #FF4C05
+   dark-blue - #3446FF
+   purle - #A182D2
+   orange - #E48400
+   pink - #FF4C83
+   
+   default - #222
+   ============================== */
+body ::-moz-selection {
+  background: #ff4c05;
+}
+body ::selection {
+  background: #ff4c05;
+}
+.progress-box .progress-bar {
+  background-color: #ff4c05;
+}
+.service-item i {
+  color: #ff4c05;
+}
+.service-item:hover {
+  border-color: #ff4c05;
+i
+}
+.filter li a:hover {
+  border-bottom: 1px solid #ff4c05;
+}
+.filter li.active a {
+  border-bottom: 1px solid #ff4c05;
+}
+figure.effect-hover figcaption {
+  background: #ff4c05;
+}
+.team-item figcaption small {
+  color: #ff4c05;
+}
+.pricing-inner:hover {
+  border-color: #ff4c05;
+}
+.pricing-inner:hover .pricing-icon,
+.pricing-inner:hover .pricing-title {
+  color: #ff4c05;
+}
+.pricing-main .pricing-inner {
+  border-color: #ff4c05;
+}
+.pricing-main .pricing-icon,
+.pricing-main .pricing-title {
+  color: #ff4c05;
+}
+.pricing-main .pricing-button .btn {
+  background: #ff4c05;
+}
+.contact-item span,
+.contact-item i {
+  color: #ff4c05;
+}
+.btn-continue-reading {
+  color: #ff4c05;
+}
+.btn-continue-reading:hover {
+  color: #ff4c05;
+}
+.pagination > li.active a,
+.pagination > li.active span {
+  border-color: #ff4c05;
+  color: #ff4c05;
+}
+.features-icon {
+  color: #ff4c05;
+}
+.btn-coffee.btn-color {
+  background: #ff4c05;
+}
+.btn-coffee.btn-color-w {
+  border: 2px solid #ff4c05;
+  background: #ff4c05;
+}
+span.higl {
+  color: #ff4c05 !important;
+}
+.team-slider .owl-page span {
+  border: 1px solid #ff4c05;
+}
+.team-slider .owl-page.active span {
+  background: #ff4c05;
+}
+@media only screen and (max-width: 768px) {
+  .overlay-left {
+    width: 100%;
+    background: #ff4c05;
+  }
+  .overlay-left div,
+  .overlay-left h1 {
+    color: #fff;
+  }
+  .overlay-right {
+    display: none;
+  }
+  .btn-scroll-alt:before,
+  .btn-scroll-alt:after {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+}
