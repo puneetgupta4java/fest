@@ -453,12 +453,12 @@
         <script src="js/lib/stats.js"></script> -->
     <script src="jquery-3.1.1.min.js"></script>
         <script>
-			$(window).load(function(){
-			$(".main").removeClass("main");
-			$(".rot").removeClass("rot");
-			$(".rot1").removeClass("rot1");
-			$(".name").removeClass("name");
-             		});
+	 $(document).ready(function(){
+                $(".main").removeClass("main");
+                $(".rot").removeClass("rot");
+                $(".rot1").removeClass("rot1");
+                $(".name").removeClass("name");
+            });
           var count_particles, stats, update;
           stats = new Stats;
           stats.setMode(0);
