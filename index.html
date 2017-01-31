@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <link rel="stylesheet" media="screen" href="stylenew.css">
-    <link rel="stylesheet" href="bootstrap\css/bootstrap.min.css">
     <link rel="stylesheet" media="screen" href="css/animate.min.css">
     <link rel="stylesheet" media="screen" href="animate.css">
     <link rel="stylesheet" type="text/css" href="style1.css">
@@ -17,14 +16,24 @@
     <link rel="stylesheet" type="text/css" href="owl.carousel.css">
     <link rel="stylesheet" media="screen" href="style.css" >
     <link rel="stylesheet" media="screen" href="et-line.css" >
-    <link rel="stylesheet" media="screen" href="css/options.css">
-    <link rel="stylesheet" media="screen" href="css/responsive.css">
-    
     <link rel="stylesheet" type="text/css" href="magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="vertical.css">
     <link rel="stylesheet" type="text/css" href="style.changer.css">
     <link rel="stylesheet" type="text/css" href="talstyle.css">
     <link rel="stylesheet" type="text/css" href="theme-red-2.css" id="theme">
+    <!--new-->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="idangerous.swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="options.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
+		<link rel="stylesheet" type="text/css" href="theme-red-2.css" id="theme">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:900,300,400,200,800">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,300,100,700%7Dosis:400,500">
+		<link rel="stylesheet" type="text/css" href="the-big-picture.css">
+		<link rel="mime" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2">
+		<link rel="stylesheet" type="text/css" href="slider.css">
     <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:900,300,400,200,800' rel='stylesheet' type='text/css'>
@@ -40,7 +49,12 @@
             background: transparent;
             border: 0px;
         }
-
+/*
+        .shrink{
+            background: #000;
+            height: 30px;
+        }
+*/
          .main{
               position: fixed; left: 0; top: 0; z-index: 99999; width: 100%; height: 100%; overflow: visible;
              background: #161415;
@@ -107,49 +121,28 @@
                  transform: rotate(360deg);
              }
          }
+        #footer{
+            background-image: url(images/footer.png);
+        }
     </style>
+   
 </head>
 <body class="appear-animate">
-  <div class="main">
+            <div class="main">
                 <div class="col-lg-12 hidden-xs hidden-sm">
                     <div class="rot">
+<!--                        <div class="loader"></div>-->
                     </div>
                     <div class="name">Umang'17</div>
                 </div>
                 <div class="col-lg-12 hidden-lg hidden-md">
                     <div class="rot1">
+<!--                        <div class="loader"></div>-->
                     </div>
                     <div class="name">Umang'17</div>
                 </div>
                 </div>
-    <div id="top"></div>
-<!--
-        <nav class="navbar navbar-inverse navbar-fixed-top navbar-default my_nav">
-			<div class="container">
-				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div class="nav-logo-wrap">
-                        <a href="" class="navbar-brand logo">Umang<span class="higl">'17</span></a>
-                    </div>
-				</div>
-				<div class="collapse navbar-collapse" id="navbar-collapse">
-					<ul class="nav navbar-nav navbar-right masthead-nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="literary.html">Events</a></li>
-                        <li><a href="council.html">Councils</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="register.html">Registration</a></li>
-						<li><a href="contact.html">Contact us</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
--->
-    
+<div id="top"></div>
     <nav class="main-nav white transparent stick-fixed">
       <div class="full-wrapper relative clearfix">
         <!-- Logo ( paste you text or image)-->
@@ -181,7 +174,7 @@
 -->
       <section id="hero" class="full-screen">
       <!--Parallax image-->
-            <div id="particles-js" data-background="sukhe.JPG" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#hero" class="parallax parallax-hero full-screen bg-dark-50"></div>
+            <div id="particles-js" data-background="sukhe.jpg" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#hero" class="parallax parallax-hero full-screen bg-dark-50"></div>
             <div class="hero-content">
             <div class="hero-content-inner">
             <div data-wow-delay="0.5s" data-wow-duration="3s" class="hs-line-2 wow fadeInDown">Ghaziabad's Biggest College Fest <br>14th - 15th February 2017</div>
@@ -190,8 +183,6 @@
 	        </div>
             </div><a href="#page" data-start="display: block" data-100-start="display: none" class="btn-scroll-down scroll"></a>
         </section>
-    
-    
         <div id="page" class="page">
 			<section id="about">
 				<div class="container">
@@ -253,8 +244,10 @@
             			</div>
           			</div>
         		</div>
-            </section>
-            <section id="team">
+
+			</section>
+            
+               <section id="team">
         
         <!--Testimonial slider start-->
 		<div class="fullwidth-testimotal-slider bg-dark-80 pt-100 pb-100">
@@ -361,9 +354,8 @@
         
       </section>
       <hr>
-		<div class="main-container">
-          <section class="contact-container with-separation-bottom with-separation-top">
-			<div class="contact-boxes">
+                      <section class="contact-container with-separation-bottom with-separation-top">
+			 <div class="contact-boxes">
 		  			<div class="contact-box contact-box-email animate-me zoomIn">
 		  				<h2>Email</h2>
 		  				<p>Write us a few lines about your ideas, your projects and let's advance together.</p>
@@ -386,12 +378,10 @@
 		  				<a href="https://www.youtube.com" class="btn btn-default"><i class="fa fa-youtube"></i> Watch us.</a>
 		  			</div>
                     
-		  		</div>	  		
+		  		</div>
             </section>
-			</div>
-	  	
-	  	<!-- END MAIN CONTAINER -->
-	  	    
+        </div>
+       <!-- START FOOTER -->
 	  	<!-- START FOOTER -->
 	  		<footer id="footer" class="with-separation-top">
 		  	   <aside id="widgets" class="container">
@@ -426,20 +416,22 @@
 	  	
 	  	<!-- SCROLL TOP -->
 	  	<a href="#" id="scroll-top" class="fadeInRight animate-me"><i class="fa fa-angle-double-up"></i></a>
-  	
+           
       </div>
-
+    
+            
+    
         <!-- scripts-->
         <script src="particles.js"></script>
         <script src="js/plugins.js"></script>
             <script src="js/custom.js"></script>
-     <script src="js/jquery-1.11.1.min.js"></script>
+             <script src="js/jquery-1.11.1.min.js"></script>
                 <script src="js/navshrink.js"></script>
             <script src="js/smoothscroll.js"></script>
             <script src="js/plagins.js"></script>
             <script src="js/owl.carousel.min.js"></script>
             <script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/modernizr.js"></script>
+           <script src="js/modernizr.js"></script>
             <script src="js/gmap3.min.js"></script>
             <script src="js/jquery.magnific-popup.min.js"></script>
             <script src="js/jquery.fitvids.js"></script>
@@ -448,18 +440,74 @@
             <script src="js/contact-form.js"></script>
              <script src="js/style.changer.js"></script>
                 <script src="app.js"></script> 
+           <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/jquery.kenburnsy.min.js"></script>
+        <script src="js/jquery.velocity.min.js"></script>
+        <script src="js/idangerous.swiper.min.js"></script>
+        <script src="js/star.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/jquery.min.js"></script>
+         
+    <script src="js/custom.js"></script>
+    <script src="js/navshrink.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/plagins.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!--new-->
+<!--
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/jquery.kenburnsy.min.js"></script>
+        <script src="js/jquery.velocity.min.js"></script>
+        <script src="js/idangerous.swiper.min.js"></script>
+        <script src="js/star.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/jquery.min.js"></script>
         
+    <script src="js/custom.js"></script>
+    <script src="js/navshrink.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/plagins.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    
+    <script src="js/gmap3.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/contact-form.js"></script>
+     <script src="js/style.changer.js"></script>
+    <script src="js/jquery.particleground.min.js"></script>
+         <script src="js/jquery.particleground.js"></script>
+         <script src="js/demo.js"></script>
+
+
+		<script src="js/custom.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+    	<script src="js/plugins.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="bootstrap\js/bootstrap.min.js"></script>
+-->
         <!-- stats.js 
         <script src="js/lib/stats.js"></script> -->
     <script src="jquery-3.1.1.min.js"></script>
         <script>
-	      $(document).ready(function(){
+            $(document).ready(function(){
                 $(".main").removeClass("main");
                 $(".rot").removeClass("rot");
                 $(".rot1").removeClass("rot1");
                 $(".name").removeClass("name");
-               });
-          var count_particles, stats, update;
+            });
+          var count_particles, stats, update,main;
+//            main = document.getElementsByClassName('main');
+//            window.addEventListener('load',function(){
+//                main.style.display = "none";
+//            });
           stats = new Stats;
           stats.setMode(0);
           stats.domElement.style.position = 'absolute';
@@ -488,6 +536,5 @@
             });
         });
         </script>
-
-</body>
+    </body>
 </html>
