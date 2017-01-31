@@ -404,7 +404,7 @@ ghaziabad, UP - 201003</li>
                 var coun = council.text();
                   //  alert(council.text());
                          if(coun =="Literary Council"){
-                             alert('hii');
+                            
                              $('#contact-form').attr('action','RegisterLiterary');
                          }
                          else if(coun=="Hobby Council"){
@@ -417,6 +417,46 @@ ghaziabad, UP - 201003</li>
                                 alert('do appropriate selection');
                             }
                      });
-             }); 
+            $('#contact-name').change(function(){
+                   var name = $('#contact-name').val();
+                   var length = name.length;
+                if(length>30){
+                    $('#contact-name').val('');
+                     alert('write only your name');
+                }
+            });
+            $('#contact-secondname').change(function(){
+                   var name = $('#contact-secondname').val();
+                   var length = name.length;
+                if(length>30){
+                   
+                    $('#contact-secondname').val('');
+                     alert('write only your name');
+                }
+            });
+            $('#contact-teamname').change(function(){
+                   var name = $('#contact-teamname').val();
+                   var length = name.length;
+                if(length>30){
+                   
+                    $('#contact-teamname').val('');
+                     alert('write only your team name');
+                }
+            });
+            $('#contact-roll').change(function(){
+                var rol = $('#contact-roll').val();
+                if(rol.length > 10){
+                    $('#contact-roll').val('');
+                    alert('enter correct rollno');
+                }
+            });
+            $('#contact-secondroll').change(function(){
+                var rol = $('#contact-secondroll').val();
+                if(rol.length > 10){
+                    $('#contact-secondroll').val('');
+                    alert('enter correct rollno');
+                }
+            });
+            }); 
     </script>
 </html>
