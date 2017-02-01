@@ -11,459 +11,260 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="">
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- FAVICON -->	
+	<link rel="shortcut icon" href="images/favicon.png" />
     <!-- STYLESHEETS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/animate.min.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-    <link href="vertical.css" rel="stylesheet" media="screen">
-    <link href="style1.css" rel="stylesheet" media="screen">
     <link href="style.css" rel="stylesheet" media="screen">
     <link href="css/options.css" rel="stylesheet" media="screen">
     <link href="css/responsive.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link href="2/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+    <script src="2/thumbnail-slider.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:900,300,400,200,800' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-        body {
-            margin: 0px;
-            padding: 0px;
-        }
-        /*
-         .name{
-             color: #fff;
+     <style type="text/css">
+      body{
+        margin: 0px;
+        padding: 0px;
+       
+    }
+
+         header{
+            background-image: url(img11.jpg);  
          }
-*/
-        
-        header {
-            background-image: url(abstract_3d_wallpaper_4-1680x1050.jpg);
-        }
-    </style>
-</head>
-<!-- START BODY -->
+         
+  </style>
+  </head>
+  <!-- START BODY -->
+  <body>
 
-<body>
-
-    <div id="page">
-        <!-- START HEADER -->
-        <header id="header" class="small with-separation-bottom">
-            <!-- POINTER ANIMATED -->
-            <canvas id="header-canvas"></canvas>
-
-            <nav id="navigation-mobile"></nav>
-
-            <!-- MAIN MENU -->
-            <nav id="navigation">
-                <!-- DISPLAY MOBILE MENU -->
-                <a href="#" id="show-mobile-menu"><i class="fa fa-bars"></i></a>
-                <!-- CLOSE MOBILE MENU -->
-                <a href="#" id="close-navigation-mobile"><i class="fa fa-long-arrow-left"></i></a>
-
-                <ul id="left-navigation" class="animate-me fadeInLeftBig">
-                    <li class="menu-item">
-                        <a href="punindex.html">Home</a>
-
-                    </li>
-
-                    <li class="menu-item"><a href="literary.html">Events</a></li>
-                    <li class="menu-item"><a href="sac.html">About Us</a></li>
-
-                </ul>
-
-                <!--                <ul  class="animate-me flipInX" data-wow-duration="3s">-->
-
-                <!--                   </ul>-->
-                <div class="animate-me flipInX" data-wow-duration="3s">
-                    <a id="logo-navigation">
-
-                    </a>
-                </div>
-                <!--		  		<ul id="right-navigation" class="animate-me fadeInRightBig">-->
+  	<div id="page">
+	  	<!-- START HEADER -->
+	  	<header id="header" class="small with-separation-bottom">
+	  		<!-- POINTER ANIMATED -->
+	  		<canvas id="header-canvas"></canvas>
+	  		
+	  		<nav id="navigation-mobile"></nav>
+	  	
+	  		<!-- MAIN MENU -->
+	  		<nav id="navigation">
+	  			<!-- DISPLAY MOBILE MENU -->
+	  			<a href="#" id="show-mobile-menu"><i class="fa fa-bars"></i></a>
+	  			<!-- CLOSE MOBILE MENU -->
+		  		<a href="#" id="close-navigation-mobile"><i class="fa fa-long-arrow-left"></i></a>
+	  			
+		  		<ul id="left-navigation" class="animate-me fadeInLeftBig">
+			  		<li class="menu-item">
+			  			<a href="punindex.html">Home</a>
+			  			
+			  		</li>
+			  		
+			  		<li class="menu-item current-menu-item menu-item-has-children"><a href="literary.html" >Events</a></li>
+                    <li class="menu-item"><a href="sac.html" >About Us</a></li>
+                    
+		  		</ul>
+		  		
+<!--                <ul  class="animate-me flipInX" data-wow-duration="3s">-->
+		  			
+<!--                   </ul>-->
+                <div  class="animate-me flipInX" data-wow-duration="3s">
+		  			<a id="logo-navigation">
+		  				
+		  			</a>
+		  		</div>
+<!--		  		<ul id="right-navigation" class="animate-me fadeInRightBig">-->
                 <ul id="right-navigation" class="animate-me fadeInRightBig">
+                   
+			  		<li class="menu-item"><a href="gallery.html" >Gallery</a></li>
+                     <li class="menu-item"><a href="register.html">Register</a> </li>
+			  		<li class="menu-item"><a href="contact.html" >Contact Us</a></li>
+			  		
+		  		</ul>
+	  		</nav>
+	  		<!-- SHADOW -->
+	  		<div id="shade2"></div>
 
-                    <li class="menu-item"><a href="gallery.html">Gallery</a></li>
-                    <li class="menu-item"><a href="register.html">Register</a> </li>
-                    <li class="menu-item current-menu-item menu-item-has-children"><a href="contact.html">Contact Us</a></li>
-
-                </ul>
-            </nav>
-            <!-- SHADOW -->
-            <div id="shade2"></div>
-        </header>
-        <!-- END HEADER -->
+	  		
+	  	</header>
+	  	<!-- END HEADER -->
         <div class="main-container">
-            <div class="container">
-                <!--PORTFOLIO -->
-                <h1 class="with-breaker animate-me fadeInUp name">EVENTS </h1>
-                <div class="tabs-container">
-                    <ul class="nav nav-tabs" role="tablist" id="SkillsTab">
-                        <li class="active">
-                            <a href="#skill1" role="tab" data-toggle="tab"><i class="fa fa-star-o"></i> MR/MS TALENTIME</a></li>
-                        <li><a href="#skill2" role="tab" data-toggle="tab"><i class="fa fa-star-o"></i>Marketing game </a></li>
-                        <li><a href="#skill3" role="tab" data-toggle="tab"><i class="fa fa-star-o"></i>Finance game  </a></li>
-                        <li><a href="#skill4" role="tab" data-toggle="tab"><i class="fa fa-star-o"></i>Human Resource game</a></li>
-                        <li><a href="#skill5" role="tab" data-toggle="tab"><i class="fa fa-star-o"></i> Treasure hunt</a></li>
-                        <li><a href="#skill7" role="tab" data-toggle="tab"><i class="fa fa-star-o"></i> Theme Show </a></li>
-                        <li><a href="#skill6" role="tab" data-toggle="tab"><i class="fa fa-star-o"></i> Cultural & Game Events </a></li>
-                        <li><a href="#skill8" role="tab" data-toggle="tab"><i class="fa fa-star-o"></i> Entrepreneurial Game </a></li>
-                    </ul>
-
-                    <div class="tab-content">
-                        <div class="tab-pane active bounceInRight" id="skill1">
-                            <h2><i class="fa fa-star-o"></i>Mr/Ms Talentime</h2>
-                            <p class="text-justify">The Flagship Event (Solo Event)</p>
-                            <p class="prize">Prize worth: Rs.25,000 </p>
-                            <p>The time has come and Talentime wants its Mr/MsTalentime., for which you need intellect, skill, technique, courage, creativity, spontaneity, exuberance & passion.Have you got the talent to be the best manager of the biggest management gala in South India? </p>
-                            <b>Rules & Regulations:</b>
-                            <br/>
+	  		<div class="container">
+	  			
+                <h2 class="with-breaker animate-me fadeInUp name">
+		  			Events!! 
+	  			</h2>
+                 <div style="padding:120px 0;">
+                    <div id="thumbnail-slider">
+                        <div class="inner">
                             <ul>
-                                <li> One participants from each college. </li>
-                                <li> Participants should get their own laptop & Internet Facility.</li>
-                                <li> Judges decision final.</li>
-                                <li>Be ready for any task.</li>
-
+                                <li>
+                                    <a class="thumb" href="img/cultural.png"></a>
+                                </li>
+                                <li>
+                                    <a class="thumb" href="img/hobby.png"></a>
+                                </li>
+                                <li>
+                                    <a class="thumb" href="img/literary.png"></a>
+                                </li>
                             </ul>
-
-                            <div class="text-left">
-                                <a href="register.php" class="btn btn-default"><i class="fa fa-home"></i> Register Now</a>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h4 class="center">  Contact: </h4> </div>
-                                <div class="col-lg-3">
-                                    <h4 class="center"> Hari Radhakrishnan <br/> +91 8281616745</h4> </div>
-
-                            </div>
                         </div>
+                    </div>
+                </div>
+                 <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Literary Events</a>
+                        </h4>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body"><ul>
+                              <li>group events</li>
+                            <li>group events</li>
+                            <li>group events</li>
+                            <li>group events</li>
+                            </ul></div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Hobby Events</a>
+                        </h4>
+                      </div>
+                      <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body"><ul>
+                              <li>group events</li>
+                            <li>group events</li>
+                            <li>group events</li>
+                            <li>group events</li>
+                            </ul></div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Cultural Events</a>
+                        </h4>
+                      </div>
+                      <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body"><ul>
+                              <li>group events</li>
+                            <li>group events</li>
+                            <li>group events</li>
+                            <li>group events</li>
+                            </ul></div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>	
+        </div>
+            <section class="contact-container with-separation-bottom with-separation-top">
+			<div class="contact-boxes">
+		  			<div class="contact-box contact-box-email animate-me zoomIn">
+		  				<h2>Email</h2>
+		  				<p>Write us a few lines about your ideas, your projects and let's advance together.</p>
+		  				<a href="https://www.rkgit.edu.in" class="btn btn-default"><i class="fa fa-envelope"></i>Contact</a>
+		  			</div>
+		  			<div class="contact-box contact-box-twitter animate-me zoomIn">
+		  				<h2>Twitter</h2>
+		  				<p>Follow us to interact, chat and share our ideas on Twitter.</p>
+		  				<a href="https://www.twitter.com" class="btn btn-default"><i class="fa fa-twitter"></i> Follow us</a>
+		  			</div>
+		  			<div class="contact-box contact-box-facebook animate-me zoomIn">
+		  				<h2>Facebook</h2>
+		  				<p>Like our page and send us message directly from our brand new Facebook page.</p>
+		  				<a href="https://www.facebook.com" class="btn btn-default"><i class="fa fa-facebook"></i> Like us</a>
+		  			</div>
+                    
+		  			<div class="contact-box contact-box-youtube animate-me zoomIn">
+		  				<h2>Youtube</h2>
+		  				<p>View our previous Events</p>
+		  				<a href="https://www.youtube.com" class="btn btn-default"><i class="fa fa-youtube"></i> Watch us.</a>
+		  			</div>
+                    
+		  		</div>	  		</section>
+	  	</div>
+	  	<!-- END MAIN CONTAINER -->
+	  	    
+	  	<!-- START FOOTER -->
+	  		<footer id="footer" class="with-separation-top">
+		  	<aside id="widgets" class="container">
+		  		<div class="row">
+		  			<!-- WIDGET -->
+			  		<div class="col-md-4 widget animate-me fadeInLeft">
+			  			<p>Umang'17</p>
+			  			<a href="talentime.html" class="btn btn-default"><i class="fa fa-users"></i> Read more</a>
+			  		</div>
+		  			<!-- WIDGET -->
+			  		<div class="col-md-4 widget animate-me fadeInUp">
+				  		
+				  			</div>
+		  			<!-- WIDGET -->
+			  		<div class="col-md-4 widget animate-me fadeInRight">
+			  			<h4>Contact</h4>
+			  			<ul class="contact-informations">
+				  			<li class="contact-address">Raj Kumar Goel Institute of Technology, 
+ghaziabad, UP - 201003</li>
+				  			
+			  			</ul>
+			  						  			<a href="register.php" class="btn btn-default"><i class="fa fa-envelope-o"></i> Contact Now</a>
+			  		</div>
+		  		</div>
+		  	</aside>
+		  	<div id="copyright" class="animate-me fadeInUp">
+		  		<div class="container">
+			  		<p>&#169; 2017 All Rights Reserved.Umang-2017 &nbsp; &nbsp; | &nbsp; Designed by&nbsp;&nbsp; WebDev
+			  		
+		  		</div>
+		  	</div>
+	  	</footer>
+	  	<!-- END FOOTER -->
+	  	
+	  	<!-- SCROLL TOP -->
+	  	<a href="#" id="scroll-top" class="fadeInRight animate-me"><i class="fa fa-angle-double-up"></i></a>
+  	
+      </div>
+    <!-- SCRIPTS -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+      <script>
+        $(document).ready(function(){
+           $('#lit').click(function(){
+               $('.result_lit').animate({height: "300px"});
+               $('.result_hob').animate({height: "0px"});
+               $('.result_cult').animate({height: "0px"});
+               $('.result_spo').animate({height: "0px"});
+           });
+             $('#cult').click(function(){
+               $('.result_lit').animate({height: "0px"});
+               $('.result_hob').animate({height: "0px"});
+               $('.result_cult').animate({height: "300px"});
+               $('.result_spo').animate({height: "0px"});
+           }); 
+             $('#hob').click(function(){
+               $('.result_lit').animate({height: "0px"});
+               $('.result_hob').animate({height: "300px"});
+               $('.result_cult').animate({height: "0px"});
+               $('.result_spo').animate({height: "0px"});
+           }); 
+             $('#sport').click(function(){
+               $('.result_lit').animate({height: "0px"});
+               $('.result_hob').animate({height: "0px"});
+               $('.result_cult').animate({height: "0px"});
+               $('.result_spo').animate({height: "300px"});
+           }); 
+        });
+      </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+  <!-- END BODY -->
 
-                        <div class="tab-pane bounceInRight" id="skill2">
-                            <h2><i class="fa fa-star-o"></i>Marketing Game </h2>
-                            <p class="prize">Prize worth: Rs.30,000 </p>
-                            <p>Talentime wants new breed of marketing managers, who are quick in decision making, having the courage to face the daunting task and also have the capabilities to overcome their hurdles and bring out effective results or outcome. Have you got it in you? Talentime challenges you? Will you take up the challenge?</p>
-                            <b>Rules & Regulations:</b>
-                            <br/>
-                            <ul>
-                                <li> 4 members per team </li>
-                                <li>Participants must carry their own laptop & Internet facility.</li>
-                                <li> English should be the medium of communication.</li>
-                                <li> Panel decision will be final.</li>
-                                <li> Usage of obscene gesture or words are prohibited</li>
-
-                            </ul>
-                            .
-                            <br>
-
-                            <div class="text-left">
-                                <a href="register.php" class="btn btn-default"><i class="fa fa-home"></i> Register Now</a>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h4 class="center">  Contact: </h4> </div>
-                                <div class="col-lg-3">
-                                    <h4 class="center"> Hari Radhakrishnan <br/> +91 8281616745</h4> </div>
-
-                            </div>
-                        </div>
-                        <div class="tab-pane bounceInRight" id="skill3">
-                            <h2><i class="fa fa-star-o"></i> Finance Game</h2>
-
-                            <p class="prize">Prize worth: Rs.30,000 </p>
-
-                            <p>
-                                Money! Money! Money! Its what the corporate world is after. Talentime is now searching for an effective team who can help it find the problem to the various financial issue and also come up with an realistic solution to solve them and bring about a stability. And for that you need Aspiration, Assertion & Aggression. Are you ready? Then let’s get it started!!</p>
-                            <b>
-Rules & Regulations:</b>
-                            <br/>
-                            <ul>
-                                <li> 4 members per team </li>
-                                <li>Participants must carry their own laptop & Internet facility.</li>
-                                <li> English should be the medium of communication.</li>
-                                <li> Panel decision will be final.</li>
-                                <li> Each round will have its own rules.</li>
-
-                            </ul>
-                            .
-                            <br>
-
-                            <div class="text-left">
-                                <a href="register.php" class="btn btn-default"><i class="fa fa-home"></i> Register Now</a>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h4 class="center">  Contact: </h4> </div>
-                                <div class="col-lg-3">
-                                    <h4 class="center"> Hari Radhakrishnan <br/> +91 8281616745</h4> </div>
-
-                            </div>
-                        </div>
-                        <div class="tab-pane bounceInRight" id="skill4">
-                            <h2><i class="fa fa-star-o"></i>Human Resource game</h2>
-
-                            <p class="prize">Prize worth: Rs.30,000 </p>
-
-                            <p>
-                                Human the back bone for any organization, it is not an easy task to manage humans who are deceiving & unreliable, and if left unattended can be highly detrimental for an organization. You cannot deny their problems & issues nor throw them out, because they are important resource that help organization in achieving their goals. Do you think you have it in you? Can you satisfy both human and organization?</p>
-                            <b>
-Rules & Regulations:</b>
-                            <br/>
-                            <ul>
-                                <li> 4 members per team </li>
-                                <li>Participants must carry their own laptop & Internet facility.</li>
-
-                                <li> Panel decision will be final.</li>
-                                <li> Each round will have its own rules.</li>
-                                <li> No use of foul language.</li>
-
-                            </ul>
-                            .
-                            <br>
-
-                            <div class="text-left">
-                                <a href="register.php" class="btn btn-default"><i class="fa fa-home"></i> Register Now</i></a>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h4 class="center">  Contact: </h4> </div>
-                                <div class="col-lg-3">
-                                    <h4 class="center"> Hari Radhakrishnan <br/> +91 8281616745</h4> </div>
-
-                            </div>
-                        </div>
-                        <div class="tab-pane bounceInRight" id="skill5">
-                            <h2><i class="fa fa-star-o"></i>Treasure hunt</h2>
-
-                            <p class="prize">Prize worth: Rs.22,000 </p>
-                            <p>
-                                Since the early civilization, treasure hunts have always fascinated the human race. We have grown up listening to the legendary tales of "The Arabian Nights","Sindbad" and also witnessed "National Treasure" breaking all the box-office records. So chuck all the story-stuff and use your basic knowledge of surveying to experience the real thrill and excitement of Treasure Hunting. </p>
-                            <b>
-Rules & Regulations:</b>
-                            <br/>
-                            <ul>
-                                <li> There should not be more than three members in a team. </li>
-                                <li> Team will be provided with clues on the basis of clues, teams have to find the treasure within a given period of time.</li>
-                                <li> Teams have to follow proper sequence of clues from first to last</li>
-                                <li> Judges decision final</li>
-
-                            </ul>
-
-                            <div class="text-left">
-                                <a href="register.php" class="btn btn-default"><i class="fa fa-home"></i> Register Now</i></a>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h4 class="center">  Contact: </h4> </div>
-                                <div class="col-lg-3">
-                                    <h4 class="center"> Hari Radhakrishnan <br/> +91 8281616745</h4> </div>
-
-                            </div>
-                        </div>
-                        <div class="tab-pane bounceInRight" id="skill6">
-                            <h2><i class="fa fa-star-o"></i>Cultural & Game Events </h2>
-                            <p class="text-justify"> </p>
-                            <p class="prize"> </p>
-                            <p>
-                                <ul>
-                                    <li> Theme Show </li>
-                                    <li> Adaptune .</li>
-                                    <li> DJ War with live music</li>
-                                    <li> Voice of Talentime</li>
-                                    <li> 3s Football </li>
-                                    <li> FIFA’16 </li>
-
-                                </ul>
-                            
-                            <b>
-Rules & Regulations:</b>
-                            <br/>
-                            <ul>
-
-                                <li> judges decision will be final </li>
-
-                            </ul>
-
-                            <div class="text-left">
-                                <a href="#" class="btn btn-default"><i class="fa fa-home"></i> Register Now</i></a>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h4 class="center">  Contact: </h4> </div>
-                                <div class="col-lg-3">
-                                    <h4 class="center"> Hari Radhakrishnan <br/> +91 8281616745</h4> </div>
-
-                            </div>
-                        </div>
-                        <div class="tab-pane bounceInRight" id="skill3">
-
-                            <div class="text-left">
-                                <a href="#" class="btn btn-default"><i class="fa fa-home"></i> Register Now</i></a>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h4 class="center">  Contact: </h4> </div>
-                                <div class="col-lg-3">
-                                    <h4 class="center"> AKHIL SABU <br/> +91 9645 354194</h4> </div>
-                                <div class="col-lg-3">
-                                    <h4 class="center">  </h4> </div>
-                                <div class="col-lg-3">
-                                    <h4 class="center">   </h4> </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane bounceInRight" id="skill7">
-                            <h2><i class="fa fa-star-o"></i>Theme Show</h2>
-
-                            <p class="prize">Prize worth: Rs.30,000 </p>
-                            <p class="prize"> 1<span class="sup">st</span>Prize: Rs.20,000.00 | 2<span class="sup">nd</span>Prize : 10,000.00 </p>
-                            <p>
-                                Since the early civilization, treasure hunts have always fascinated the human race. We have grown up listening to the legendary tales of "The Arabian Nights","Sindbad" and also witnessed "National Treasure" breaking all the box-office records. So chuck all the story-stuff and use your basic knowledge of surveying to experience the real thrill and excitement of Treasure Hunting. </p>
-                            <b>
-Rules & Regulations:</b>
-
-                            <ul>
-
-                                <li> Time limit :Maximum 10 minutes(negative marks will be there for exceeding time limit)</li>
-
-                                <li>Decision of judges will be final and binding. </li>
-                                <li> There should be a theme </li>
-                                <li> Green room will be provided </li>
-                                <li> Should carry their tracks in cds, pen drive or aux</li>
-                                <li> Vulgarity is strongly prohibited – Any form of obscenity will lead to debarring the team from contest</li>
-                                <li> Usage of cigarettes, alcohol or any unfair means are strongly prohibited</li>
-                                <li> Team will be judged on costumes, theme, walking stance and attitude </li>
-
-                            </ul>
-
-                            <div class="text-left">
-                                <a href="#" class="btn btn-default"><i class="fa fa-home"></i> Register Now</i></a>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h4 class="center">  Contact: </h4> </div>
-                                <div class="col-lg-3">
-                                    <h4 class="center"> AKHIL SABU <br/> +91 9645 354194</h4> </div>
-
-                            </div>
-
-                            <div class="tab-pane bounceInRight" id="skill8">
-                                <h2><i class="fa fa-star-o"></i> Entrepreneurial Game </h2>
-
-                                <!--<p class="prize">Prize worth:  Rs.30,000 </p>   
-<p class="prize"> 1<span class="sup">st</span>Prize:   Rs.20,000.00  | 2<span class="sup">nd</span>Prize : 10,000.00  </p>  -->
-                                <p>
-                                    The Entrepreneur Games is the hottest team-building event of the Talentime for UG students. Exercise your management skills and entrepreneurial qualities, and learn how to run a successful business or operation! </p>
-                                <b>
-Rules & Regulations:</b>
-
-                                <ul>
-
-                                    <li> UG only game </li>
-                                    <li> 4 members per team </li>
-                                    <li> Participants must carry their own laptop & Internet facility. </li>
-                                    <li> English should be the medium of communication.</li>
-                                    <li> Panel decision will be final.</li>
-                                    <li> Each round will have its own rules. </li>
-
-                                </ul>
-
-                                <div class="text-left">
-                                    <a href="#" class="btn btn-default"><i class="fa fa-home"></i> Register Now</i></a>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                        <h4 class="center">  Contact: </h4> </div>
-                                    <div class="col-lg-3">
-                                        <h4 class="center"> AKHIL SABU <br/> +91 9645 354194</h4> </div>
-
-                                </div>
-                                <div>
-                                    <div>
-                                        <script>
-                                            $(function() {
-                                                $('#SkillsTab a').click(function(e) {
-                                                    e.preventDefault()
-                                                    $(this).tab('show')
-                                                });
-                                            });
-                                        </script>
-                                    </div>
-                                </div>
-
-                                <section class="contact-container with-separation-bottom with-separation-top">
-                                    <div class="contact-boxes">
-                                        <div class="contact-box contact-box-email animate-me zoomIn">
-                                            <h2>Email</h2>
-                                            <p>Write us a few lines about your ideas, your projects and let's advance together.</p>
-                                            <a href="https://www.rkgit.edu.in" class="btn btn-default"><i class="fa fa-envelope"></i>Contact</a>
-                                        </div>
-                                        <div class="contact-box contact-box-twitter animate-me zoomIn">
-                                            <h2>Twitter</h2>
-                                            <p>Follow us to interact, chat and share our ideas on Twitter.</p>
-                                            <a href="https://www.twitter.com" class="btn btn-default"><i class="fa fa-twitter"></i> Follow us</a>
-                                        </div>
-                                        <div class="contact-box contact-box-facebook animate-me zoomIn">
-                                            <h2>Facebook</h2>
-                                            <p>Like our page and send us message directly from our brand new Facebook page.</p>
-                                            <a href="https://www.facebook.com" class="btn btn-default"><i class="fa fa-facebook"></i> Like us</a>
-                                        </div>
-
-                                        <div class="contact-box contact-box-youtube animate-me zoomIn">
-                                            <h2>Youtube</h2>
-                                            <p>View our previous Events</p>
-                                            <a href="https://www.youtube.com" class="btn btn-default"><i class="fa fa-youtube"></i> Watch us.</a>
-                                        </div>
-
-                                    </div>
-                                </section>
-                            </div>
-                            <!-- END MAIN CONTAINER -->
-
-                            <!-- START FOOTER -->
-                            <footer id="footer" class="with-separation-top">
-                                <aside id="widgets" class="container">
-                                    <div class="row">
-                                        <!-- WIDGET -->
-                                        <div class="col-md-4 widget animate-me fadeInLeft">
-                                            <p>Umang'17</p>
-                                            <a href="talentime.html" class="btn btn-default"><i class="fa fa-users"></i> Read more</a>
-                                        </div>
-                                        <!-- WIDGET -->
-                                        <div class="col-md-4 widget animate-me fadeInUp">
-
-                                        </div>
-                                        <!-- WIDGET -->
-                                        <div class="col-md-4 widget animate-me fadeInRight">
-                                            <h4>Contact</h4>
-                                            <ul class="contact-informations">
-                                                <li class="contact-address">Raj Kumar Goel Institute of Technology, ghaziabad, UP - 201003</li>
-
-                                            </ul>
-                                            <a href="register.php" class="btn btn-default"><i class="fa fa-envelope-o"></i> Contact Now</a>
-                                        </div>
-                                    </div>
-                                </aside>
-                                <div id="copyright" class="animate-me fadeInUp">
-                                    <div class="container">
-                                        <p>&#169; 2017 All Rights Reserved.Umang-2017 &nbsp; &nbsp; | &nbsp; Designed by&nbsp;&nbsp; WebDev
-
-                                    </div>
-                                </div>
-                            </footer>
-                            <!-- END FOOTER -->
-
-                            <!-- SCROLL TOP -->
-                            <a href="#" id="scroll-top" class="fadeInRight animate-me"><i class="fa fa-angle-double-up"></i></a>
-
-                            <!-- SCRIPTS -->
-                            <script src="js/jquery-1.11.1.min.js"></script>
-                            <script src="js/plugins.js"></script>
-                            <script src="js/custom.js"></script>
-                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-                            <script src="bootstrap\js/bootstrap.min.js"></script>
-</body>
-<!-- END BODY -->
-
+<!-- Mirrored from talentime.in/gallery.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jan 2017 10:43:02 GMT -->
 </html>
