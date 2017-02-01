@@ -20,6 +20,8 @@
     <link href="style.css" rel="stylesheet" media="screen">
     <link href="css/options.css" rel="stylesheet" media="screen">
     <link href="css/responsive.css" rel="stylesheet" media="screen">
+    <link href="2/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+    <script src="2/thumbnail-slider.js" type="text/javascript"></script>
     <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:900,300,400,200,800' rel='stylesheet' type='text/css'>
@@ -29,59 +31,11 @@
         padding: 0px;
        
     }
-/*
-         .name{
-             color: #fff;
-         }
-*/
+
          header{
             background-image: url(img11.jpg);  
          }
-         #coun{
-             margin-bottom: 30px;
-         }
-         .sidemenu{
-             list-style: none;
-             color: #161415;
-             margin-bottom: 10px;
-             margin-top: 10px;
-         }
-         .sidemenu li{
-             cursor: pointer;
-             color: #161415;
-             opacity: 1;
-             transition: opacity 300ms ease-in-out;
-             padding-bottom: 10px;
-             padding-top: 10px;
-             padding-left: 10px;
-              font-family: "Times New Roman", Georgia, Serif;
-             font-size: 20px;
-         }
-         .sidemenu li:hover{
-             opacity: 1;
-             color: #2A81C6  ;
-            
-         }
-         .result_lit{
-             color: #fff;
-             background: #161415;
-             height: 300px;
-         }
-         .result_cult{
-             color: #fff;
-             background: red;
-             height: 0px;
-         }
-         .result_hob{
-             color: #fff;
-             background:blue;
-             height: 0px;
-         }
-         .result_spo{
-             color: #fff;
-             background:yellow;
-             height: 0px;
-         }
+         
   </style>
   </head>
   <!-- START BODY -->
@@ -104,12 +58,12 @@
 	  			
 		  		<ul id="left-navigation" class="animate-me fadeInLeftBig">
 			  		<li class="menu-item">
-			  			<a href="index.html">Home</a>
+			  			<a href="punindex.html">Home</a>
 			  			
 			  		</li>
-			  		<li class="menu-item"><a href="sac.html" >About Us</a></li>
-			  		<li class="menu-item  current-menu-item menu-item-has-children"><a href="literary.html" >Events</a></li>
-                    
+			  		
+			  		<li class="menu-item current-menu-item menu-item-has-children"><a href="literary.html" >Events</a></li>
+                    <li class="menu-item"><a href="sac.html" >About Us</a></li>
                     
 		  		</ul>
 		  		
@@ -138,25 +92,27 @@
 	  	<!-- END HEADER -->
         <div class="main-container">
 	  		<div class="container">
-	  			<!--PORTFOLIO -->
-	  			<h2 class="with-breaker animate-me fadeInUp name">
-                    Literary Council Events!! 
+	  			
+                <h2 class="with-breaker animate-me fadeInUp name">
+		  			Events!! 
 	  			</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="coun">
-                        <ul class="sidemenu">
-                            <li class="sidenav" id="lit">Events</li>
-                            <li class="sidenav" id="cult">Events</li>
-                            <li class="sidenav" id="hob">Events</li>
-                            <li class="sidenav" id="sport">Events</li>
-                        </ul>
+                 <div style="padding:120px 0;">
+                    <div id="thumbnail-slider">
+                        <div class="inner">
+                            <ul>
+                                <li>
+                                    <a class="thumb" href="img/cultural.png"></a>
+                                </li>
+                                <li>
+                                    <a class="thumb" href="img/hobby.png"></a>
+                                </li>
+                                <li>
+                                    <a class="thumb" href="img/literary.png"></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                        <div class="result_lit"></div>
-                        <div class="result_cult"></div>
-                        <div class="result_hob"></div>
-                        <div class="result_spo"></div>
-                    </div>
+                </div>
                 </div>
             </div>	
 	  		
