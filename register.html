@@ -37,6 +37,28 @@
          header{
              background-image: url(wallpapers-28.jpg); 
          }
+         .result{
+             display: none;
+         }
+         .show{
+             animation: show 4000ms ease-in-out;
+         }
+         @ketframes show{
+             0%{
+                 display: none;
+                 height: 0%;
+             }
+             100%{
+                 display: block;
+                height: 100%;
+             }
+         }
+         .second{
+             display: none;
+         }
+         .team{
+             display: none;
+         }
   </style>
   </head>
   <!-- START BODY -->
@@ -59,7 +81,7 @@
 	  			
 		  		<ul id="left-navigation" class="animate-me fadeInLeftBig">
 			  		<li class="menu-item">
-			  			<a href="index.html">Home</a>
+			  			<a href="punindex.html">Home</a>
 			  			
 			  		</li>
 			  		<li class="menu-item"><a href="sac.html" >About Us</a></li>
@@ -87,16 +109,7 @@
 	  		</nav>
 	  		<!-- SHADOW -->
 	  		<div id="shade2"></div>
-
-	  		<!-- HEADER SLIDER -->
-<!--
-		  	<div class="flexslider" id="header-slider">
-		  		<ul class="slides">
-		  			<li><img src="images/backgrounds/talentime-slide-2.jpg" alt="SLider Image"></li>
-		  		</ul>	
-		  	</div>
--->
-	  		
+		
 	  	</header>
 	  	<!-- END HEADER -->
         <div class="main-container">
@@ -105,38 +118,96 @@
 	  			<h2 class="with-breaker animate-me fadeInUp name">
 		  			Register Here!! 
 	  			</h2>
-		</div>
 	  			<div class="row">
-					
+	  				
                     
                     
                     <div class="col-md-10">
 	  					
 	  					
                        <form id="contact-form" method="post" action="#" class="form-horizontal">
+                           <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-event">Type of Event</label>
+								<div class="controls col-md-8">
+                                    
+                                    
+                                    <select name="" id="type" placeholder="Select your event type" class="input-xlarge form-control" required="">
+														<option value="Not selected">Select your Event</option>
+                                                        <option value="solo">solo</option>
+														<option value="duet">duet</option>
+														<option value="team">team</option>
+                                    </select>
+                 </div>
+							</div>
+							
+                                    
+                                    <div class="result">
+						
 							<!-- NAME -->
 							<div class="control-group row">
 								<label class="control-label col-md-4" for="contact-name">Name</label>
 								<div class="controls col-md-8">
-									<input id="contact-name" name="contact-name" type="text" placeholder="Your name" class="input-xlarge form-control" required="">
+									<input id="contact-name" name="" type="text" placeholder="Your name" class="input-xlarge form-control" required="">
 								</div>
 							</div>
-                            
+                            <div class="team">
+                                 <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-name">TeamName</label>
+								<div class="controls col-md-8">
+									<input id="contact-teamname" name="" type="text" placeholder="Your Team name" class="input-xlarge form-control" required="">
+								</div>
+							</div>       
+                            </div>
 <!--                            roll no                        -->
                             <div class="control-group row">
 								<label class="control-label col-md-4" for="contact-roll">Roll No.</label>
 								<div class="controls col-md-8">
-									<input id="contact-roll" name="contact-roll" type="text" placeholder="Enter the roll no." class="input-xlarge form-control" required="">
+									<input id="contact-roll" name="" type="text" placeholder="Enter the roll no." class="input-xlarge form-control" required="">
 								</div>
                                                                                         
 							</div>
-							<!-- EMAIL -->
-							<div class="control-group row">
-								<label class="control-label col-md-4" for="contact-email">Email</label>
+                        <div class="second">
+                            <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-secondname">Second Name</label>
 								<div class="controls col-md-8">
-									<input id="contact-email" name="contact-email" type="email" placeholder="you@example.com" class="input-xlarge form-control" required="">
+									<input id="contact-secondname" name="" type="text" placeholder="second name" class="input-xlarge form-control" required="">
+								</div>
+							</div>
+                            
+<!--                          second  roll no                        -->
+                            <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-secondroll">Second Roll No.</label>
+								<div class="controls col-md-8">
+									<input id="contact-secondroll" name="" type="text" placeholder="Enter the second roll no." class="input-xlarge form-control" required="">
 								</div>
                                                                                         
+							</div>
+                        </div>
+							<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-year">Year</label>
+								<div class="controls col-md-8">
+									<select id="contact-year" name="" type="text" placeholder="Choose your year" class="input-xlarge form-control" required="">
+                                      		<option value="Not selected">Select your year</option>
+                                            <option value="first">First year</option>
+								            <option value="second">Second year</option>
+								            <option value="third">Third year</option>
+								            <option value="fourth">Fourth year</option>  
+                                    </select>
+								</div>
+							</div>
+                         	<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-branch">Branch</label>
+								<div class="controls col-md-8">
+									<select id="contact-branch" name="" type="text" placeholder="Choose your branch" class="input-xlarge form-control" required="">
+                                      		<option value="Not selected">Select your Branch</option>
+                                            <option value="cs">CSE</option>
+								            <option value="ece">ECE</option>
+								            <option value="it">IT</option>
+								            <option value="mech">Mechinal</option>
+                                            <option value="civil">Civil</option>
+                                        <option value="eee">EEE</option>
+                                    </select>
+								</div>
 							</div>
                            
                            
@@ -144,21 +215,27 @@
 							<div class="control-group row">
 								<label class="control-label col-md-4" for="contact-number">Mobile Number</label>
 								<div class="controls col-md-8">
-									<input id="contact-number" name="contact-number" type="tel" placeholder="Enter your mobile number" class="input-xlarge form-control" required="">
+									<input id="contact-number" name="" type="tel" placeholder="Enter your mobile number" class="input-xlarge form-control" required="">
 								</div>
 							</div>
-                           
+                           <div class="second">
+                              	<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-secondnumber">Second Mobile Number</label>
+								<div class="controls col-md-8">
+									<input id="contact-secondnumber" name="" type="tel" placeholder="Enter second mobile number" class="input-xlarge form-control" required="">
+								</div>
+							</div>            
+                            </div>
                            
                            <!-- college -->
 							<div class="control-group row">
 								<label class="control-label col-md-4" for="contact-phone">Council</label>
 								<div class="controls col-md-8">
-									<select id="contact-council" name="contact-council" type="text" placeholder="Choose your Council" class="input-xlarge form-control" required="">
+									<select id="contact-council" name="" type="text" placeholder="Choose your Council" class="input-xlarge form-control council" required="">
                                       		<option value="Not selected">Select your Council</option>
-                                            <option value="Literary Council">Literary Council</option>
-								            <option value="Hobby Council">Hobby Council</option>
-								            <option value="Cultural Council">Cultural Council</option>
-								            <option value="Sports Council">Sports Council</option>  
+                                            <option value="Literary">Literary Council</option>
+								            <option value="Hobby">Hobby Council</option>
+								            <option value="Cultural">Cultural Council</option>
                                     </select>
 								</div>
 							</div>
@@ -169,7 +246,7 @@
 								<div class="controls col-md-8">
                                     
                                     
-                                    <select name="contact-event" id="contact-event" placeholder="Select your event" class="input-xlarge form-control" required="">
+                                    <select name="" id="contact-event" placeholder="Select your event" class="input-xlarge form-control" required="">
 														<option value="Not selected">Select your Event</option>
                                                         <option value=""></option>
 														<option value=""></option>
@@ -185,12 +262,36 @@
                                    
 								</div>
 							</div>
-							
+							<div class="control-group row">
+								<label class="control-label col-md-4" for="contact-gender">Gender</label>
+								<div class="controls col-md-8">
+                                      <select name="" id="contact-gender" placeholder="Select your gender" class="input-xlarge form-control" required="">
+														<option value="Not selected">Select your gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>                                        
+													</select>
+								</div>
+                                                                                        
+							</div>
+                                        <div class="second">
+                                            <div class="control-group row">
+								<label class="control-label col-md-4" for="contact-secondgender">Second person Gender</label>
+								<div class="controls col-md-8">
+                                      <select name="" id="contact-gender" placeholder="Select your gender" class="input-xlarge form-control" required="">
+														<option value="Not selected">Select your gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>                                        
+													</select>
+								</div>
+                                                                                        
+							</div>
+                                        </div>
 							
 							<div class="control-group text-right">
 							 	<input type="hidden" name="submitted" id="submitted" value="true" />
 							 	<button type="submit" class="btn btn-default" name="submitted"><i class="fa fa-paper-plane-o"></i> Register</button>
 							</div>
+                           </div>
 						</form> 
                         
                   
@@ -200,12 +301,12 @@
 	  			</div>
 	  		</div>
 	  		</div>
-              <section class="contact-container with-separation-bottom with-separation-top">
+            <section class="contact-container with-separation-bottom with-separation-top">
 			<div class="contact-boxes">
 		  			<div class="contact-box contact-box-email animate-me zoomIn">
 		  				<h2>Email</h2>
 		  				<p>Write us a few lines about your ideas, your projects and let's advance together.</p>
-		  				<a href="https://www.rkgit.edu.in" class="btn btn-default"><i class="fa fa-envelope"></i> Contact</a>
+		  				<a href="register.php" class="btn btn-default"><i class="fa fa-envelope"></i> Contact us</a>
 		  			</div>
 		  			<div class="contact-box contact-box-twitter animate-me zoomIn">
 		  				<h2>Twitter</h2>
@@ -255,7 +356,7 @@ ghaziabad, UP - 201003</li>
 		  	</aside>
 		  	<div id="copyright" class="animate-me fadeInUp">
 		  		<div class="container">
-			  		<p>&#169; 2017 All Rights Reserved.Umang-2017 &nbsp; &nbsp; | &nbsp; Designed by&nbsp;&nbsp; WebDev
+			  		<p>&#169; 2017 All Rights Reserved.Umang-2017 &nbsp; &nbsp;
 			  		
 		  		</div>
 		  	</div>
@@ -270,5 +371,92 @@ ghaziabad, UP - 201003</li>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/custom.js"></script>
-  
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('#type').change(function(){
+                        
+               var list = $('#type option:selected'); 
+           
+                var sel = list.text();
+                         if(sel=="solo"){
+                            $('.result').addClass('show');
+                              $('.second').removeClass('show');
+                             $('.team').removeClass('show');
+                         }
+                         else if(sel=="duet"){
+                              $('.result').addClass('show');
+                             $('.second').addClass('show');
+                              $('.team').removeClass('show');
+                         }
+                         else if(sel=="team"){
+                              $('.result').addClass('show');
+                             $('.team').addClass('show');
+                            $('.second').removeClass('show');
+                         }
+                        else{
+                            alert('do appropriate selection');
+                        }
+                     });
+                $('.council').change(function(){
+                        
+               var council = $('.council option:selected'); 
+                var coun = council.text();
+                  //  alert(council.text());
+                         if(coun =="Literary Council"){
+                            
+                             $('#contact-form').attr('action','RegisterLiterary');
+                         }
+                         else if(coun=="Hobby Council"){
+                             $('#contact-form').attr('action','RegisterHobbby');
+                         }
+                         else if(coun=="Cultural Council"){
+                             $('#contact-form').attr('action','RegisterCultural');
+                         }
+                            else{
+                                alert('do appropriate selection');
+                            }
+                     });
+            $('#contact-name').change(function(){
+                   var name = $('#contact-name').val();
+                   var length = name.length;
+                if(length>30){
+                    $('#contact-name').val('');
+                     alert('write only your name');
+                }
+            });
+            $('#contact-secondname').change(function(){
+                   var name = $('#contact-secondname').val();
+                   var length = name.length;
+                if(length>30){
+                   
+                    $('#contact-secondname').val('');
+                     alert('write only your name');
+                }
+            });
+            $('#contact-teamname').change(function(){
+                   var name = $('#contact-teamname').val();
+                   var length = name.length;
+                if(length>30){
+                   
+                    $('#contact-teamname').val('');
+                     alert('write only your team name');
+                }
+            });
+            $('#contact-roll').change(function(){
+                var rol = $('#contact-roll').val();
+                if(rol.length > 10){
+                    $('#contact-roll').val('');
+                    alert('enter correct rollno');
+                }
+            });
+            $('#contact-secondroll').change(function(){
+                var rol = $('#contact-secondroll').val();
+                if(rol.length > 10){
+                    $('#contact-secondroll').val('');
+                    alert('enter correct rollno');
+                }
+            });
+            }); 
+    </script>
 </html>
