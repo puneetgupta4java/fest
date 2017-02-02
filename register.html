@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <!-- PAGE TITLE -->
-    <title>Kalrav'17</title>
+    <title>UMANG'17</title>
     <!-- MAKE IT RESPONSIVE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
@@ -59,6 +59,9 @@
          .team{
              display: none;
          }
+         .hide{
+             display: none;
+         }
   </style>
   </head>
   <!-- START BODY -->
@@ -81,7 +84,7 @@
 	  			
 		  		<ul id="left-navigation" class="animate-me fadeInLeftBig">
 			  		<li class="menu-item">
-			  			<a href="index.html">Home</a>
+			  			<a href="punindex.html">Home</a>
 			  			
 			  		</li>
 			  		<li class="menu-item"><a href="sac.html" >About Us</a></li>
@@ -131,7 +134,7 @@
 								<div class="controls col-md-8">
                                     
                                     
-                                    <select name="" id="type" placeholder="Select your event type" class="input-xlarge form-control" required="">
+                                    <select name="typeofevent" id="type" placeholder="Select your event type" class="input-xlarge form-control" required="">
 														<option value="Not selected">Select your Event</option>
                                                         <option value="solo">solo</option>
 														<option value="duet">duet</option>
@@ -142,19 +145,20 @@
 							
                                     
                                     <div class="result">
-						
+                                        <div class="nam">
 							<!-- NAME -->
 							<div class="control-group row">
 								<label class="control-label col-md-4" for="contact-name">Name</label>
 								<div class="controls col-md-8">
-									<input id="contact-name" name="" type="text" placeholder="Your name" class="input-xlarge form-control" required="">
+									<input id="contact-name" name="name" type="text" placeholder="Your name" class="input-xlarge form-control">
 								</div>
 							</div>
+                                        </div>
                             <div class="team">
                                  <div class="control-group row">
 								<label class="control-label col-md-4" for="contact-name">TeamName</label>
 								<div class="controls col-md-8">
-									<input id="contact-teamname" name="" type="text" placeholder="Your Team name" class="input-xlarge form-control" required="">
+									<input id="contact-teamname" name="groupname" type="text" placeholder="Your Team name" class="input-xlarge form-control" >
 								</div>
 							</div>       
                             </div>
@@ -162,23 +166,23 @@
                             <div class="control-group row">
 								<label class="control-label col-md-4" for="contact-roll">Roll No.</label>
 								<div class="controls col-md-8">
-									<input id="contact-roll" name="" type="text" placeholder="Enter the roll no." class="input-xlarge form-control" required="">
+									<input id="contact-roll" name="rollnumber" type="text" placeholder="Enter the roll no." class="input-xlarge form-control numeric" required="">
 								</div>
                                                                                         
 							</div>
                         <div class="second">
                             <div class="control-group row">
-								<label class="control-label col-md-4" for="contact-secondname">Second Name</label>
+								<label class="control-label col-md-4" for="contact-secondname"> Second Participant Name</label>
 								<div class="controls col-md-8">
-									<input id="contact-secondname" name="" type="text" placeholder="second name" class="input-xlarge form-control" required="">
+									<input id="contact-secondname" name="name2" type="text" placeholder="second name" class="input-xlarge form-control" >
 								</div>
 							</div>
                             
 <!--                          second  roll no                        -->
                             <div class="control-group row">
-								<label class="control-label col-md-4" for="contact-secondroll">Second Roll No.</label>
+								<label class="control-label col-md-4" for="contact-secondroll">Second Participant Roll No.</label>
 								<div class="controls col-md-8">
-									<input id="contact-secondroll" name="" type="text" placeholder="Enter the second roll no." class="input-xlarge form-control" required="">
+									<input id="contact-secondroll" name="rollnumber2" type="text" placeholder="Enter the second roll no." class="input-xlarge form-control numeric" >
 								</div>
                                                                                         
 							</div>
@@ -186,7 +190,7 @@
 							<div class="control-group row">
 								<label class="control-label col-md-4" for="contact-year">Year</label>
 								<div class="controls col-md-8">
-									<select id="contact-year" name="" type="text" placeholder="Choose your year" class="input-xlarge form-control" required="">
+									<select id="contact-year" name="year" type="text" placeholder="Choose your year" class="input-xlarge form-control" required="">
                                       		<option value="Not selected">Select your year</option>
                                             <option value="first">First year</option>
 								            <option value="second">Second year</option>
@@ -198,7 +202,7 @@
                          	<div class="control-group row">
 								<label class="control-label col-md-4" for="contact-branch">Branch</label>
 								<div class="controls col-md-8">
-									<select id="contact-branch" name="" type="text" placeholder="Choose your branch" class="input-xlarge form-control" required="">
+									<select id="contact-branch" name="branch" type="text" placeholder="Choose your branch" class="input-xlarge form-control" required="">
                                       		<option value="Not selected">Select your Branch</option>
                                             <option value="cs">CSE</option>
 								            <option value="ece">ECE</option>
@@ -215,9 +219,10 @@
 							<div class="control-group row">
 								<label class="control-label col-md-4" for="contact-number">Mobile Number</label>
 								<div class="controls col-md-8">
-									<input id="contact-number" name="" type="tel" placeholder="Enter your mobile number" class="input-xlarge form-control" required="">
+									<input id="contact-number" name="mobilenumber" type="tel" placeholder="Enter your mobile number" class="input-xlarge form-control numeric" required="">
 								</div>
 							</div>
+<!--
                            <div class="second">
                               	<div class="control-group row">
 								<label class="control-label col-md-4" for="contact-secondnumber">Second Mobile Number</label>
@@ -226,12 +231,13 @@
 								</div>
 							</div>            
                             </div>
+-->
                            
                            <!-- college -->
 							<div class="control-group row">
 								<label class="control-label col-md-4" for="contact-phone">Council</label>
 								<div class="controls col-md-8">
-									<select id="contact-council" name="" type="text" placeholder="Choose your Council" class="input-xlarge form-control council" required="">
+									<select id="contact-council" name="council" type="text" placeholder="Choose your Council" class="input-xlarge form-control council" required="" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
                                       		<option value="Not selected">Select your Council</option>
                                             <option value="Literary">Literary Council</option>
 								            <option value="Hobby">Hobby Council</option>
@@ -245,6 +251,7 @@
 								<label class="control-label col-md-4" for="contact-event">Event</label>
 								<div class="controls col-md-8">
                                     
+<!--
                                     
                                     <select name="" id="contact-event" placeholder="Select your event" class="input-xlarge form-control" required="">
 														<option value="Not selected">Select your Event</option>
@@ -260,12 +267,29 @@
                                                         
 													</select>
                                    
+-->
+                                    
+                                    
+                                       <div class="sub_category_div" id="sub_category_div">
+            <script type="text/javascript" language="JavaScript">
+                document.write('<select name="event" id="subcategory" class="input-xlarge form-control"><option value="">Please select event</option></select>')
+            </script>
+            <noscript>
+                <select name="event" id="subcategory" class="input-xlarge form-control">
+                    <option value="">Please select the event</option>
+                </select>
+            </noscript>
+        </div>
+                                    
+                                    
+                                    
 								</div>
 							</div>
-							<div class="control-group row">
+                            <div class="nam">	
+                                                  <div class="control-group row">
 								<label class="control-label col-md-4" for="contact-gender">Gender</label>
 								<div class="controls col-md-8">
-                                      <select name="" id="contact-gender" placeholder="Select your gender" class="input-xlarge form-control" required="">
+                                      <select name="gender" id="contact-gender" placeholder="Select your gender" class="input-xlarge form-control">
 														<option value="Not selected">Select your gender</option>
                                                         <option value="male">Male</option>
                                                         <option value="female">Female</option>                                        
@@ -273,11 +297,12 @@
 								</div>
                                                                                         
 							</div>
+                            </div>
                                         <div class="second">
                                             <div class="control-group row">
 								<label class="control-label col-md-4" for="contact-secondgender">Second person Gender</label>
 								<div class="controls col-md-8">
-                                      <select name="" id="contact-gender" placeholder="Select your gender" class="input-xlarge form-control" required="">
+                                      <select name="gender2" id="contact-gender" placeholder="Select your gender" class="input-xlarge form-control">
 														<option value="Not selected">Select your gender</option>
                                                         <option value="male">Male</option>
                                                         <option value="female">Female</option>                                        
@@ -335,8 +360,8 @@
 		  		<div class="row">
 		  			<!-- WIDGET -->
 			  		<div class="col-md-4 widget animate-me fadeInLeft">
-			  			<p>Kalrav'17</p>
-			  			<a href="council.html" class="btn btn-default"><i class="fa fa-users"></i> Read more</a>
+			  			<p>Umang'17</p>
+			  			<a href="talentime.html" class="btn btn-default"><i class="fa fa-users"></i> Read more</a>
 			  		</div>
 		  			<!-- WIDGET -->
 			  		<div class="col-md-4 widget animate-me fadeInUp">
@@ -356,7 +381,7 @@ ghaziabad, UP - 201003</li>
 		  	</aside>
 		  	<div id="copyright" class="animate-me fadeInUp">
 		  		<div class="container">
-			  		<p>&#169; 2017 All Rights Reserved.Kalrav-2017 &nbsp; &nbsp;
+			  		<p>&#169; 2017 All Rights Reserved.Umang-2017 &nbsp; &nbsp; | &nbsp; Designed by&nbsp;&nbsp; WebDev
 			  		
 		  		</div>
 		  	</div>
@@ -373,26 +398,58 @@ ghaziabad, UP - 201003</li>
     <script src="js/custom.js"></script>
     <script src="jquery-3.1.1.min.js"></script>
     <script>
+
+       var specialKeys = new Array();
+        specialKeys.push(8); //Backspace
+        $(function () {
+            $(".numeric").bind("keypress", function (e) {
+                var keyCode = e.which ? e.which : e.keyCode
+                var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
+                $(".error").css("display", ret ? "none" : "inline");
+                return ret;
+            });
+            $(".numeric").bind("paste", function (e) {
+                return false;
+            });
+            $(".numeric").bind("drop", function (e) {
+                return false;
+            });
+        });
+
         $(document).ready(function(){
           $('#type').change(function(){
-                        
+              
+//                               var select = document.getElementById("subcategory");
+//                                var length = select.options.length;
+//                                 for (i = 0; i < length; i++)     {
+//                                      select.options[i] = null;
+//                                }
+                        $('#subcategory').val('');
+                        $('#contact-council').val('');
                var list = $('#type option:selected'); 
+               
            
                 var sel = list.text();
                          if(sel=="solo"){
                             $('.result').addClass('show');
                               $('.second').removeClass('show');
+                              $('#contact-form').attr('action','RegisterSolo');
                              $('.team').removeClass('show');
+                             $('.nam').removeClass('hide');
                          }
                          else if(sel=="duet"){
                               $('.result').addClass('show');
                              $('.second').addClass('show');
+                            $('#contact-form').attr('action','RegisterDuet');
                               $('.team').removeClass('show');
+                              $('.nam').removeClass('hide');
                          }
                          else if(sel=="team"){
                               $('.result').addClass('show');
                              $('.team').addClass('show');
                             $('.second').removeClass('show');
+                              $('#contact-form').attr('action','RegisterTeam');
+                              $('.nam').addClass('hide');
                          }
                         else{
                             alert('do appropriate selection');
@@ -405,13 +462,13 @@ ghaziabad, UP - 201003</li>
                   //  alert(council.text());
                          if(coun =="Literary Council"){
                             
-                             $('#contact-form').attr('action','RegisterLiterary');
+                            
                          }
                          else if(coun=="Hobby Council"){
-                             $('#contact-form').attr('action','RegisterHobbby');
+
                          }
                          else if(coun=="Cultural Council"){
-                             $('#contact-form').attr('action','RegisterCultural');
+                            
                          }
                             else{
                                 alert('do appropriate selection');
@@ -457,6 +514,125 @@ ghaziabad, UP - 201003</li>
                     alert('enter correct rollno');
                 }
             });
+
+             $('#contact-number').change(function(){
+                var rol = $('#contact-number').val();
+                if(rol.length > 10){
+                    $('#contact-number').val('');
+                    alert('enter correct number');
+                }
+            });
+            $('#contact-secondnumber').change(function(){
+                var rol = $('##contact-secondnumber').val();
+                if(rol.length > 10){
+                    $('##contact-secondnumber').val('');
+                    alert('enter correct number');
+                }
+            });   
             }); 
+
+        function dynamicdropdown(listindex)
+            {
+                 var list = $('#type option:selected'); 
+           
+                var sel = list.text();
+                document.getElementById("subcategory").length = 0;
+                switch (listindex)
+                {
+                    case "Literary" :
+                        if(sel=="solo"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("GK Quiz","GK Quiz");
+                        document.getElementById("subcategory").options[2]=new Option("Hindi Debate","Hindi debate");
+                        document.getElementById("subcategory").options[3]=new Option("English debate","English Debate");
+                        document.getElementById("subcategory").options[4]=new Option("Movie Making","Movie Making");
+                        document.getElementById("subcategory").options[5]=new Option("Spin-a-Yarn","Spin-a-Yarn");
+                        document.getElementById("subcategory").options[6]=new Option("Press Conference","Press Conference");
+                             document.getElementById("subcategory").options[7]=new Option("Mr. and Ms. Intellect","Mr. and Ms. Intellect");
+                             document.getElementById("subcategory").options[8]=new Option("Campus Recruitment","Campus Recruitment");
+                            document.getElementById("subcategory").options[9]=new Option("Paper Presentation","Paper Presentation");
+                            document.getElementById("subcategory").options[10]=new Option("Hindi Verse Writing","Hindi Verse writing");
+                            document.getElementById("subcategory").options[11]=new Option("Magazine Cover","Magazine Cover");
+                            document.getElementById("subcategory").options[12]=new Option("Cartoon Making","Cartoon Making");
+                        }
+                        if(sel=="duet"){
+                        }
+                         if(sel=="team"){
+                             document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                             document.getElementById("subcategory").options[1]=new Option("Ad-mad-Show","Ad-mad-Show");
+                         }
+                        break;
+                    
+                    case "Hobby" :
+                        if(sel=="solo"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("Mehendi","Mehendi");
+                        document.getElementById("subcategory").options[2]=new Option("Green Card Making","Green Card Making");
+                        document.getElementById("subcategory").options[3]=new Option("NFS(Need For Speed)","NFS(Need For Speed)");
+                        document.getElementById("subcategory").options[4]=new Option("Coding","Coding");
+                        document.getElementById("subcategory").options[5]=new Option("Master Throw","Master Throw");
+                        document.getElementById("subcategory").options[6]=new Option("Burst Balloon","Burst Balloon");
+                        document.getElementById("subcategory").options[6]=new Option("Roadies","Roadies");
+
+                        }
+                          if(sel=="duet"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("Face Painting","Face Painting");
+                        document.getElementById("subcategory").options[2]=new Option("Tshirt Painting","Tshirt Painting");
+                        document.getElementById("subcategory").options[3]=new Option("Poster Making","Poster Making");
+                        document.getElementById("subcategory").options[4]=new Option("Collage Making","Collage Making");
+                        document.getElementById("subcategory").options[5]=new Option("Bridge Making","Bridge Making");
+                         document.getElementById("subcategory").options[6]=new Option("Impulse Water Rocket","Impulse Water Rocket"); 
+
+                              
+                          }
+                        if(sel=="team"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("3D Rangoli","3D Rangoli");
+                        document.getElementById("subcategory").options[2]=new Option("Counter Strike 1.6","Counter Strike 1.6");
+                        document.getElementById("subcategory").options[3]=new Option("RoBo War","RoBo War");
+                        document.getElementById("subcategory").options[4]=new Option("Battle Of Bands","Battle Of Bands");
+                     document.getElementById("subcategory").options[5]=new Option("Diagknowz(Health Camp)","Diagknowz(Health Camp)"); 
+                     document.getElementById("subcategory").options[6]=new Option("Cosmotech","Cosmotech"); 
+                    document.getElementById("subcategory").options[7]=new Option("Compo-Charades","Compo-Charades");
+                            
+                    document.getElementById("subcategory").options[8]=new Option("Circuitronics","Circuitronics");
+
+                        }
+
+                            break;
+                            
+                            
+                    case "Cultural" :
+                        if(sel=="solo"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("Ramp Walk","Ramp Walk");
+                        document.getElementById("subcategory").options[2]=new Option("Solo Singing","Solo Singing");
+                        document.getElementById("subcategory").options[3]=new Option("Solo Dance","Solo Dance");
+                        document.getElementById("subcategory").options[4]=new Option("Extra Talent","Extra Talent");
+                        }
+                          if(sel=="duet"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("Duet Singing","Duet Singing");
+                        document.getElementById("subcategory").options[2]=new Option("Duet Dance","Duet Dance");
+                        document.getElementById("subcategory").options[3]=new Option("Extra Talent","Extra Talent");
+                          }
+                        if(sel=="team"){
+                        document.getElementById("subcategory").options[0]=new Option("Please select Event","");
+                        document.getElementById("subcategory").options[1]=new Option("Group Dance","Group Dance");
+                        document.getElementById("subcategory").options[2]=new Option("Skit","Skit");
+                        document.getElementById("subcategory").options[3]=new Option("Extra Talent","Extra Talent");
+                        document.getElementById("subcategory").options[4]=new Option("Street Play","Street Play"); 
+                        document.getElementById("subcategory").options[5]=new Option("Battle Of Bands","Battle Of Bands"); 
+
+                        }
+                        
+                        break;
+                 
+                }
+                return true;
+            }
+        
+        
     </script>
 </html>
